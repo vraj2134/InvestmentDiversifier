@@ -31,7 +31,7 @@ class InvestmentReturn:
                 3. Press 3 to change your holding period.
                 4. Press 4 to change diversified percentages.
                 5. Press 5 to calculate return on investment.
-                6. Press any other key to exit.
+                6. Press 6 to exit.
                 Please note : The rate of returns is as follows : 
                 { Equity : 10%, Debt : 6.8%, Crypto : 670%, Gold : 10.8%, Real Estate : 10.6% } 
                 """))
@@ -67,7 +67,7 @@ class InvestmentReturn:
                 "Please provide percentages of Equity, Debt, Crypto, Gold and Real Estate.(separated "
                 "by spaces): ")
             percentages = list(map(float, input_string.split()))
-
+        
             if len(percentages) < 5:
                 for i in range(5-len(percentages)):
                     percentages.append(0)
@@ -221,7 +221,9 @@ class InvestmentReturn:
             # location for output file given by the user
             # file_path = "D:/Industrial Engg DAL/Python/savings/Returns.txt"
 
+            return_investment = []
             for i in range(5):
+
                 # Code block under if is for calculating future value for 'Equity' investments only
                 if i == 0:
                     p = diversified_amount[i]
@@ -243,11 +245,11 @@ class InvestmentReturn:
                     # this block calculate future values for Debt, Crypto, Gold and Real estate
                     roi = round(self.comp_int(diversified_amount[i], return_percentage[i], self.__investment_period), 2)
                     print("The final returns expected for", self.__dict[i], "is $", roi)
-                self.__return_on_investment.append(roi)
-            print("Total returns will be $", sum(self.__return_on_investment))
+                return_investment.append(roi)
+            print("Total returns will be $", round(sum(return_investment), 2))
+            self.__return_on_investment = return_investment
             self.design()
             self.menu()
         else:
             print("Please provide the investment detail by pressing 1.")
             self.menu()
-            
