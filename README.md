@@ -23,11 +23,15 @@ This Python script provides a simple command-line interface to calculate the ret
 
 - **investment_return.py:** The Python script containing the InvestmentReturn class for calculating ROI.
 - **main.py:** The main file contains all the functionality.
-- **README.md:** This file containing information about the script and its usage.
+- **README.md:** This file contains information about the script and its usage.
 
 ### Dependencies
 
 The script requires Python 3.x to run. No external libraries are used.
+
+### Academic Requirements
+
+- A video presentation of the project use along with a detailed report can be found at the following Google Drive link: [Google Drive link](https://drive.google.com/drive/folders/1RmTwvu5AGY_vj1AFM0LxeX5Bny_pcODd?usp=sharing)
 
 ### Author
 
