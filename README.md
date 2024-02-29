@@ -1,6 +1,3 @@
-
-**README**
-
 ### InvestmentDiversifier
 
 This Python script provides a simple command-line interface to calculate the return on investment (ROI) for different investment categories such as Equity, Debt, Crypto, Gold, and Real Estate. The user can input their investment details including the amount, holding period, and diversified percentages across the various categories, and the script calculates the expected returns.
@@ -31,7 +28,7 @@ The script requires Python 3.x to run. No external libraries are used.
 
 ### Academic Requirements
 
-- A video presentation of the project use along with a detailed report can be found at the following Google Drive link: [Google Drive link](https://drive.google.com/drive/folders/1RmTwvu5AGY_vj1AFM0LxeX5Bny_pcODd?usp=sharing)
+- A video presentation of the project along with a detailed report can be found at the following link: [Google Drive link](https://drive.google.com/drive/folders/1RmTwvu5AGY_vj1AFM0LxeX5Bny_pcODd?usp=sharing)
 
 ### Author
 
